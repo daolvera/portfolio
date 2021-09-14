@@ -2,53 +2,50 @@
 <html>
 	<head>
 		<meta charset='UTF-8'/>
+		<meta name='viewport'
+      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 		<title>DAO Portfolio</title>
-		<link rel="stylesheet" href="design.css"/>
+		<link rel="stylesheet" href="styles.css"/>
 	</head>
 	<body>
-		<div id = "page">
-			<h1>
-			Welcome
-			</h1>
-			<ol class = "navbar">
-			  <li><a href="default.asp">Home</a></li>
-			  <li><a href="news.asp">News</a></li>
-			  <li><a href="contact.asp">Contact</a></li>
-			  <li><a href="about.asp">About</a></li>
-				<li style="float:right">DAO Portfolio</li>
-			</ol>
+		<div id = 'page'>
+			<div class ='header'>
+				<h1>Welcome to my Portfolio</h1>
+			</div>
 			<hr>
-			<h2> About Me</h2>
-				<p>
-					My name is Daniel A Olvera and I am an aspiring software developer and cyber security analayst. I am currently attending BYU studying Computer science and have grown to love the discipline. On this page you can find links to my resume, some of my projects I have worked on, my worklogs, and my contact information.
-				</p>
-				<p>
-					<h4>List of Project</h4>
-					<ul>
-						<li><a href= "https://gist.github.com/daolvera/6629878924b3569874cb09f31463f14c" target="_blank">Portfolio Website</a> : Utilized HTML, CSS</li>
-						<li>Charney Realty Website</a> : Utilized HTML, CSS to create a professional website</li>
-						<li>College budgeting App: currently in progress</li>
-					</ul>
-				</p>
-				<p>
-					<h4>Work Experience</h4>
-					<ul>
-						<li>Engagex Appointment Manager : current</li>
-						<li>Dockside Restaurant Busser: April 2019 - August 2021</li>
-						<li>Hayden Lake Country Club Line Cook: June 2017 - August 2018</li>
-						<li>Super 1 Courtesy Clerk: June 2016-August 2016</li>
-					</ul>
-				</p>
-				<footer class ="main-footer">
+			<div class = 'content'>
+				<div class = 'about_me'>
+					<h2> About Me</h2>
 					<p>
-						<h4> Contact </h4>
-						<ul>
-							<li><a href ="https://github.com/daolvera" target="_blank">Github</a></li>
-							<li><a href ="mailto: dao.olvera@gmail.com" target="_blank">dao.olvera@gmail.com</a></li>
-							<li>Cell : (208)-964-0041</li>
-						</ul>
+						My name is Daniel A Olvera and I am an aspiring software developer and cyber security analayst. I am currently attending BYU studying Computer science and have grown to love the discipline. On this page you can find links to my resume, some of my projects I have worked on, my worklogs, and my contact information.
 					</p>
-				</footer>
+				</div>
+					<div class ='projects'>
+						<h4>List of Project</h4>
+						<div = 'project_list'>
+							<div = 'project_item'><a href= "https://gist.github.com/daolvera/6629878924b3569874cb09f31463f14c" target="_blank">Portfolio Website</a> : Utilized HTML, CSS</div>
+							<div = 'project_item'>Charney Realty Website</a> : Utilized HTML, CSS to create a professional website</div>
+							<div = 'project_item'>College budgeting App: currently in progress</div>
+						</div>
+					</div>
+					<div class ='work'>
+						<h4>Work Experience</h4>
+						<div class ='work_list'>
+							<div = 'project_item'>Engagex Appointment Manager : current</div>
+							<div = 'project_item'>>Dockside Restaurant Busser: April 2019 - August 2021</div>
+							<div = 'project_item'>Hayden Lake Country Club Line Cook: June 2017 - August 2018</div>
+							<div = 'project_item'>Super 1 Courtesy Clerk: June 2016-August 2016</div>
+						</div>
+					</div>
+				</div>
+				<div class ='main-footer'>
+					<h4> Contact </h4>
+					<div class ='contact'>
+						<div class = 'contact_item'><a href ="https://github.com/daolvera" target="_blank">Github</a></div>
+						<div class = 'contact_item'><a href ="mailto: dao.olvera@gmail.com" target="_blank">dao.olvera@gmail.com</a></div>
+						<div class = 'contact_item'>Cell : (208)-964-0041</div>
+					</div>
+				</div>
 			</div>
 
 	</body>
