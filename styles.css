@@ -5,61 +5,95 @@
 }
 .page {
   display: flex;
-  flex-wrap: wrap;
+  height: 100%;
+}
+h1{
+  font-size: 25px;
 }
 
-.section {
-  width: 100%;
-  height: 300px;
+
+
+.header {
+  background-color: #097969;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.menu {
-  background-color: #5995DA;
-  height: 80px;
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height : 100px;
+  width: 500px;
 }
-
-.header {
-  background-color: #B2D6FF;
+.about_me,
+.projects,
+.work{
+  margin: 25px;
 }
+.about_me p{
+  margin: 5px;
+}
+.project_item{
+  margin : 10px;
+}
+.main-footer {
+  background-color: #d3d3d3;
+  height: 100px;
+  display: flex;
+}
+.contact{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 
+}
+a{
+  text-decoration: none;
+}
+.contact_item{
+  display: flex;
+  padding: 5px;
+  border-right: 1px solid #333;
+}
+.work_item{
+  margin : 10px;
+}
 .content {
   background-color: #EAEDF0;
-  height: 600px;
+  width: 100%;
+  display: flex;
+  height: 900px;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.sign-up {
-  background-color: #D6E9FE;
-}
-
-.feature-1 {
-  background-color: #F5CF8E;
-}
-
-.feature-2 {
-  background-color: #F09A9D;
-}
-
-.feature-3 {
-  background-color: #C8C6FA;
-}
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
   body {
-    background-color: #F09A9D; /* Red */
+    background-color: #d3d3d3;
   }
 }
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-  .sign-up,
-  .feature-1,
-  .feature-2,
-  .feature-3 {
-    width: 50%;
+  .about_me,
+  .projects,
+  .work{
+    width: 45%;
+  }
+  .content{
+    flex-direction: row;
+    flex-wrap: wrap;
+    height : 800px;
+  }
+  .contact_item{
+    border-right: 0px solid #d3d3d3;
+  }
+  .main-footer h4{
+    padding: 15px;
   }
 }
 
@@ -67,21 +101,29 @@
 @media only screen and (min-width: 961px) {
   .page {
     width: 960px;
+    height:500px;
     margin: 0 auto;
   }
-  .feature-1,
-  .feature-2,
-  .feature-3 {
-    width: 33.3%;
+  h1{
+    font-size: 35px;
   }
   .header {
-    height: 400px;
+    height: 150px;
   }
-  .sign-up {
-    height: 200px;
-    order: 1;
+  .head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d3d3d3;
+    opacity: .7;
+    height : 75px;
+    width: 500px;
   }
-  .content {
-    order: 2;
+  .contact_item{
+    border-right: 0px solid #d3d3d3;
+  }
+  .content{
+    margin:0px;
+    height: 600px;
   }
 }
